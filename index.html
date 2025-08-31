@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cyber Security Awareness Game</title>
+  <meta name="description" content="Interactive Cyber Security Awareness Game (quiz, scenarios, password mini-game, phishing spotter)." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Cyber Security Awareness Game</h1>
+        <div class="small">Learn to spot phishing, build strong passwords, and make safer choices online.</div>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <button id="toggleTheme" title="Toggle dark mode"></button>
+        <button id="resetBtn" class="ghost" title="Reset game">Reset</button>
+      </div>
+    </header>
+
+    <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+    <main id="app" class="card" role="main" aria-live="polite"></main>
+
+    <footer>
+      Built for cyber awareness — No credentials are collected • Play to learn
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
